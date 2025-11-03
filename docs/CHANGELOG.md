@@ -193,7 +193,41 @@
 
 ---
 
+## Zápisnica – Týždeň 6
+**Dátum:** 27.10.2025 (pondelok)  
+**Čas:** 17:00–18:10  
+**Miesto:** A514  
+**Účastníci:** všetci  
+**Vypracoval:** Vladyslav Panik
 
+**Zhodnotenie úloh z T5:**  
+- Objednávka HW – potvrdená, zásielka na ceste.  
+- Bezpečnostné požiadavky API (návrh) – pripravené.  
+- Používateľské scenáre (papierové skripty) – pripravené.  
+- Checklist HW testov – pripravený.  
+- Logistika montážneho dňa – pripravená.
+
+**Program:**  
+1) **Uzavretie výskumnej fázy** (konsolidácia poznatkov)  
+2) Plán prvých meraní po doručení HW (výskumné, nie implementačné)  
+3) Aktualizácia dokumentácie
+
+**Priebeh rokovania:**  
+- Závery: zvolená kombinácia **ESP12‑F + PN532 (SPI)**, definované porty, napájanie, komunikačné toky a API kontrakty – všetko na úrovni **návrhu**.  
+- Prvé merania: čas čítania, chybovosť, reakcia na interferencie; záznam metodík do dokumentácie.  
+- Web prezentácia bude slúžiť na priebežné publikovanie zistení a zápisníc (bez kódu).
+
+**Rozhodnutia:**  
+- Po doručení HW zorganizovať montážny deň a vykonať výskumné testy podľa checklistu.  
+- Pokračovať v dokumentovaní a príprave na ďalšiu fázu (implementácia až neskôr).
+
+**Úlohy (nové):**  
+- Všetci: doplniť kapitolu „Výskumné zistenia a metodika testovania“ – do 30.10.  
+- Andrian‑Maksym: potvrdiť prevzatie zásielky a zvolať montáž – hneď po doručení.  
+- Vladyslav: pripraviť šablónu reportu z meraní – do 30.10.  
+- Danylo + Yurii + Vitalii: pripraviť otázky pre vedúceho k ďalšej fáze – do 30.10.
+
+**Zverejnenie zápisnice:** 02.11.2025 (≥1 deň pred nasledujúcim plánovaným stretnutím)
 
 ---
 
