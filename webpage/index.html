@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <title>ISIC Attendance System - Team Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="milestones.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Hlavička -->
+    <header>
+        <div class="header-content">
+            <div class="project-name">ISIC Attendance System</div>
+            <nav>
+                <ul>
+                    <li><button class="tab-btn active" data-tab="changelog">Changelog</button></li>
+                    <li><button class="tab-btn" data-tab="team">Náš tím</button></li>
+                    <li><button class="tab-btn" data-tab="resources">Zdroje</button></li>
+                    <li><button class="tab-btn" data-tab="milestones">Míľniky</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hlavný kontajner -->
+    <div class="container">
+        <!-- Tab: Changelog -->
+        <div id="changelog" class="tab-content active">
+            <section>
+                <div id="changelog-content"></div>
+            </section>
+        </div>
+
+        <!-- Tab: Náš tím -->
+        <div id="team" class="tab-content">
+            <section>
+                <h2>Náš tím</h2>
+                
+                <div class="supervisor-info">
+                    <h3>Vedúci projektu</h3>
+                    <a href="https://uim.fei.stuba.sk/pracovnici/ondrej-gallo/" target="_blank">Ing. Ondrej Gallo, PhD.</a>
+                </div>
+
+                <h3>Členovia tímu</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="media/balaichuk.jpeg" alt="Andrian-Maksym Balaichuk" class="member-photo">
+                        <div class="member-name">Andrian-Maksym Balaichuk</div>
+                        <div class="member-role">Hardware & Embedded Systems</div>
+                        <div class="member-description">
+                            Zodpovedný za návrh a implementáciu hardvéru. Špecializuje sa na zapojenie PN532 a ESP12-F,
+                            výber komponentov a testovanie hardvérových riešení. Koordinuje objednávky a montáž zariadenia.
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="media/zahorulko.jpeg" alt="Danylo Zahorulko" class="member-photo">
+                        <div class="member-name">Danylo Zahorulko</div>
+                        <div class="member-role">Backend Developer</div>
+                        <div class="member-description">
+                            Navrhuje a implementuje backend architektúru projektu. Zodpovedá za REST API, databázový model,
+                            autentizáciu a bezpečnosť. Pracuje s FastAPI a PostgreSQL.
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="media/panik.jpeg" alt="Vladyslav Panik" class="member-photo">
+                        <div class="member-name">Vladyslav Panik</div>
+                        <div class="member-role">UX Designer & Project Coordinator</div>
+                        <div class="member-description">
+                            Dizajnér používateľského rozhrania a koordinátor projektu. Zodpovedný za UX toky,
+                            informačnú architektúru a prípravu projektovej dokumentácie. Zabezpečuje komunikáciu v tíme.
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="media/romaniuk.jpeg" alt="Vitalii Romaniuk" class="member-photo">
+                        <div class="member-name">Vitalii Romaniuk</div>
+                        <div class="member-role">Embedded Software & Libraries</div>
+                        <div class="member-description">
+                            Špecialista na knižnice a SDK pre PN532 a ESP platformy. Analyzuje a testuje
+                            dostupné riešenia, vyhodnocuje ich vhodnosť a implementuje komunikačné protokoly.
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="media/soma.jpeg" alt="Yurii Soma" class="member-photo">
+                        <div class="member-name">Yurii Soma</div>
+                        <div class="member-role">Frontend Developer</div>
+                        <div class="member-description">
+                            Frontend vývojár zodpovedný za používateľské rozhraníe. Pracuje s React a TypeScript,
+                            implementuje routing, stavovú správu a prepojenie s backend API.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team-about">
+                <h2>O nás ako tíme</h2>
+                <div class="team-description">
+                    <p>Sme fullstack vývojový tím zložený z piatich študentov, ktorí sa spojili s cieľom vytvoriť
+                    inovatívne riešenie pre evidenciu dochádzky pomocou ISIC kariet. Každý člen tímu prináša
+                    svoje špecifické znalosti a skúsenosti, čo nám umožňuje pokryť všetky aspekty projektu
+                    od hardvéru cez backend až po frontend.</p>
+                    
+                    <p>Náš tím sa stretáva pravidelne každý pondelok o 17:00 v miestnosti A514, kde diskutujeme
+                    o progrese, riešime výzvy a plánujeme ďalšie kroky. Komunikujeme prostredníctvom MS Teams
+                    </p>
+                </div>
+
+                <h3>Tímové fotografie</h3>
+                <div class="team-photos">
+                    <div class="team-photo-item">
+                        <img src="media/photo_2025-10-20_23-00-24.jpg" alt="Tímová fotografia 1">
+                    </div>
+                    <div class="team-photo-item">
+                        <img src="media/photo_2025-10-20_23-00-31.jpg" alt="Tímová fotografia 2">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Tab: Zdroje -->
+        <div id="resources" class="tab-content">
+            <section>
+                <h2>Projektové dokumenty a zdroje</h2>
+                
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📄</div>
+                        <div class="resource-title">Ponuka projektu</div>
+                        <div class="resource-description">
+                            Oficiálna ponuka tímového projektu obsahujúca popis projektu, ciele,
+                            rozdelenie rolí a harmonogram.
+                        </div>
+                        <a href="media/Ponuka_TP.pdf" download class="download-btn">Stiahnuť PDF</a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">📋</div>
+                        <div class="resource-title">Zápisnice</div>
+                        <div class="resource-description">
+                            Všetky týždenné zápisnice z našich stretnutí sú dostupné v sekcii Changelog.
+                        </div>
+                        <a href="#" class="external-link" onclick="switchTab('changelog'); return false;">
+                            Prejsť na Changelog →
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">💻</div>
+                        <div class="resource-title">GitHub repozitár</div>
+                        <div class="resource-description">
+                            Zdrojový kód projektu vrátane frontend, backend a hardware častí.
+                        </div>
+                        <a href="https://github.com/Team-project-ISIC-attendance/isic-project" class="external-link">
+                            GitHub →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Ďalšie zdroje</h2>
+                <ul class="resource-list">
+                    <li>
+                        <strong>Vedúci projektu:</strong>
+                        <a href="https://uim.fei.stuba.sk/pracovnici/ondrej-gallo/" target="_blank">
+                            Ing. Ondrej Gallo, PhD. - Profil
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Stretnutia:</strong> Každý pondelok, 17:00, miestnosť A514
+                    </li>
+                    <li>
+                        <strong>Dokumentácia hardvéru:</strong> PN532 NFC Reader, ESP12-F
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Tab: Míľniky -->
+        <div id="milestones" class="tab-content">
+            <section>
+                <h2>Projektové míľniky</h2>
+                
+                <div class="timeline">
+                    <div class="milestone">
+                        <div class="milestone-marker"></div>
+                        <div class="milestone-number">1</div>
+                        <div class="milestone-content">
+                            <div class="milestone-title">Výber témy a podanie ponuky</div>
+                            <div class="milestone-date">September 2025</div>
+                            <div class="milestone-description">
+                                Tím sa stretol a jednomyseľne zvolil tému ISIC Attendance System.
+                                Rozdelili sme si role, pripravili dokumentáciu a úspešne podali ponuku projektu.
+                            </div>
+                            <span class="milestone-status status-completed">✓ Dokončené</span>
+                        </div>
+                    </div>
+
+                    <div class="milestone">
+                        <div class="milestone-marker"></div>
+                        <div class="milestone-number">2</div>
+                        <div class="milestone-content">
+                            <div class="milestone-title">Výskum komponentov a technológií</div>
+                            <div class="milestone-date">September - Október 2025</div>
+                            <div class="milestone-description">
+                                Realizovali sme komplexný výskum hardvérových komponentov (PN532, ESP12-F),
+                                software frameworkov (React, FastAPI) a komunikačných protokolov.
+                                Vytvorili sme elektronické schémy a API kontrakty.
+                            </div>
+                            <span class="milestone-status status-completed">✓ Dokončené</span>
+                        </div>
+                    </div>
+
+                    <div class="milestone">
+                        <div class="milestone-marker"></div>
+                        <div class="milestone-number">3</div>
+                        <div class="milestone-content">
+                            <div class="milestone-title">Objednávka a montáž hardvéru</div>
+                            <div class="milestone-date">Október 2025</div>
+                            <div class="milestone-description">
+                                Objednali sme všetky potrebné komponenty (ESP12-F, PN532, káble, USB-TTL adapter).
+                                Po dodaní sme sa stretli s vedúcim projektu a spojili komponenty podľa našej schémy.
+                                Vykonali sme prvotné testy funkčnosti.
+                            </div>
+                            <span class="milestone-status status-completed">✓ Dokončené</span>
+                        </div>
+                    </div>
+
+                    <div class="milestone">
+                        <div class="milestone-marker"></div>
+                        <div class="milestone-number">4</div>
+                        <div class="milestone-content">
+                            <div class="milestone-title">Aktualizácia webovej stránky</div>
+                            <div class="milestone-date">November 2025</div>
+                            <div class="milestone-description">
+                                Redesign webovej stránky projektu s novými sekciami (tím, zdroje, míľniky).
+                                Implementácia moderného dark theme dizajnu s tab navigáciou a responzívnym layoutom.
+                                Pridanie changelog, tímových fotografií a možnosti sťahovania dokumentov.
+                            </div>
+                            <span class="milestone-status status-in-progress">⟳ Prebieha</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- JavaScript pre tab navigáciu a načítanie changelog -->
+    <script src="script.js"></script>
+</body>
+</html>
+

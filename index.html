@@ -1,26 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 <head>
   <meta charset="utf-8">
-  <title>Team project Changelog</title>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <meta http-equiv="refresh" content="0; url=webpage/index.html">
+  <title>ISIC Attendance System - Redirecting...</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
-      padding: 0;
     }
-    #content {
-      padding: 20px;
+    .redirect-message {
+      text-align: center;
+    }
+    .redirect-message h1 {
+      color: #00d4ff;
+      margin-bottom: 1rem;
+    }
+    .redirect-message a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .redirect-message a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div id="content"></div>
-  <script>
-    fetch('docs/CHANGELOG.md', {cache: 'no-cache'})
-      .then(res => res.text())
-      .then(md => document.getElementById('content').innerHTML = marked.parse(md));
-  </script>
+  <div class="redirect-message">
+    <h1>ISIC Attendance System</h1>
+    <p>Presmerovávam na hlavnú stránku...</p>
+    <p><a href="webpage/index.html">Kliknite tu, ak nie ste presmerovaný automaticky</a></p>
+  </div>
 </body>
 </html>

@@ -1,0 +1,129 @@
+/* Štýly pre stránku tímu */
+
+/* Grid členov */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: rgba(40, 40, 40, 0.6);
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    border-color: #00d4ff;
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.2);
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00d4ff;
+    margin: 0 auto 1rem;
+    display: block;
+    background: rgba(0, 212, 255, 0.1);
+}
+
+.member-name {
+    color: #00d4ff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.member-description {
+    color: #c0c0c0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Sekcia o tíme */
+.team-about {
+    margin-top: 3rem;
+}
+
+.team-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.team-photo-item {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+}
+
+.team-photo-item:hover {
+    border-color: #00d4ff;
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+}
+
+.team-photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-description {
+    color: #c0c0c0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Supervisor sekcia */
+.supervisor-info {
+    background: rgba(0, 212, 255, 0.05);
+    border: 2px solid #00d4ff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.supervisor-info h3 {
+    margin-top: 0;
+    color: #00d4ff;
+}
+
+.supervisor-info a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.supervisor-info a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-photos {
+        grid-template-columns: 1fr;
+    }
+}
+
