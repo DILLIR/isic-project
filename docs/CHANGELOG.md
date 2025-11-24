@@ -231,6 +231,46 @@
 
 ---
 
+## Zápisnica – Týždeň 7
+**Dátum:** 03.11.2025 (pondelok)  
+**Čas:** 17:00–17:35  
+**Miesto:** A514  
+**Účastníci:** všetci  
+**Vypracoval:** Danylo Zahorulko
+
+**Zhodnotenie úloh z T6:**  
+>- Výskumné zistenia – priebežne doplnené.  
+>- Montážny deň – uskutočnený, hardvér doručený a zmontovaný.  
+>- Šablóna reportu z meraní – pripravená.  
+>- Otázky pre vedúceho – pripravené.
+
+**Program:**  
+1) Synchronizácia stavu projektu  
+2) Diskusia o ďalších krokoch  
+3) Plánovanie prác
+
+**Priebeh rokovania:**  
+>- **Andrian‑Maksym** informoval o pokroku v práci s hardvérom a predstavil úvahy o dizajne hardvérových komponentov.  
+>- **Vitalii** pokračuje v práci s knižnicami a výskume formátu dát na hardvérovej úrovni.  
+>- **Danylo** pracuje na backend architektúre a lokálnej verzii backendu.  
+>- **Yurii** pokračuje v lokálnej vývoja frontend prostredia.  
+>- **Vladyslav** pokračuje v práci na používateľskom rozhraní.
+
+**Rozhodnutia:**  
+>- Pokračovať v prvých testoch hardvéru a výskume formátu ISIC kariet.  
+>- Začať koncepčne uvažovať o prvej verzii backend architektúry a dátového modelu.  
+>- Vykonať výskum formátu ISIC kariet (hardvér + backend).  
+>- Pokračovať v lokálnej vývoja frontend prostredia.
+
+**Úlohy (nové):**  
+>- Andrian‑Maksym + Vitalii: pokračovať v práci s hardvérom a výskume formátu ISIC kariet – do 07.11.  
+>- Danylo: uvažovať nad prvou verziou backend architektúry a dátového modelu databázy – do 07.11.  
+>- Ostatní: pokračovať v lokálnej vývoja a príprave otázok pre vedúceho – do 07.11.
+
+**Zverejnenie zápisnice:** 09.11.2025 (≥1 deň pred nasledujúcim plánovaným stretnutím)
+
+---
+
 ## Teória zápisníc – zásady (pre tím)
 - Zápis vyhotoviť **bezodkladne po porade**, ideálne v ten istý deň.  
 - Pre týždenné porady používať **stručný formát** s jasnými rozhodnutiami a úlohami.  
