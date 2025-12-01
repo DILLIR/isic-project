@@ -271,6 +271,71 @@
 
 ---
 
+# Zápisnica – Týždeň 12
+**Dátum:** 1.12.2025 (pondelok)  
+**Čas:** 15:25–16:00  
+**Miesto:** A514  
+**Účastníci:** Yurii Soma, Vladyslav Panik 
+**Vypracoval:** Yurii Soma
+
+---
+
+## Program
+1. Stav hardvéru (MQTT, FreeRTOS, OTA)  
+2. Návrh používateľského rozhrania (wireframy)  
+3. Backend – priebežné smerovanie  
+4. Plán na ďalší týždeň
+
+---
+
+## Priebeh rokovania
+
+### Hardvér (Andrian-Maksym + Vitalii)
+- Rozbehnutá **MQTT komunikácia na hardvéri**.  
+- Prebieha oprava a ladenie **FreeRTOS** na zabezpečenie stabilného **multitaskingu** (paralelný beh čítania, komunikácie a systémových úloh).  
+- Paralelný vývoj **OTA aktualizácií softvéru cez Wi-Fi**:  
+  - problém: limitovaná pamäť,  
+  - riešenie: bezpečný mechanizmus stiahnutia, validácie a zápisu aktualizácie.  
+- Vitalii pokračuje vo výskume formátu dát, odozvy knižníc a optimalizácii čítania ISIC/NFC rámcov.
+
+### Frontend & UX (Yurii + Vladyslav)
+Diskusia o wireframoch a základných obrazovkách:
+- **Login obrazovka**  
+- **Timetable** pre učiteľa  
+- Funkcionality:  
+  - presun študenta z jednej hodiny na druhú v prípade **„odpracovania“**,  
+  - **manuálna zmena statusu**,  
+  - **import všetkých študentov** pre danú hodinu,  
+  - návrh rýchlych akcií a vizuálnej hierarchie.  
+- Diskutované smerovanie navigácie a možné UX rozšírenia.
+
+### Backend (Danylo)
+- Pokračuje v práci na prvej verzii **backend architektúry**.  
+- Doplnený koncept pre spracovanie údajov z hardvéru cez MQTT.  
+- Rozpracúva dátový model a mapovanie dát do databázy.
+
+---
+
+## Rozhodnutia
+- Dokončiť stabilizáciu FreeRTOS + MQTT pred napojením na backend.  
+- Na základe wireframov pripraviť prvé UI prototypy.  
+- Backend rozšíriť o návrh dátových tokov (MQTT → API → DB).  
+- Pripraviť podklady pre potvrdenie smerovania UI a architektúry vedúcim.
+
+---
+
+## Úlohy (nové)
+- **Andrian-Maksym + Vitalii:** dokončiť stabilizáciu FreeRTOS multitaskingu a návrh OTA procesu
+- **Yurii + Vladyslav:** pripraviť prvé vizuálne prototypy podľa wireframov
+- **Danylo:** rozšíriť backend návrh o integráciu MQTT → API → DB a pripraviť schému dátových tokov
+
+---
+
+## Zverejnenie zápisnice
+1.12.2025
+
+---
+
 ## Teória zápisníc – zásady (pre tím)
 - Zápis vyhotoviť **bezodkladne po porade**, ideálne v ten istý deň.  
 - Pre týždenné porady používať **stručný formát** s jasnými rozhodnutiami a úlohami.  
